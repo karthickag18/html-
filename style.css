@@ -1,0 +1,119 @@
+:root{
+    --red:rgb(168, 11, 11);
+    --white:rgb(247, 250, 252);
+    --green: rgb(20, 156, 20);
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(/home/vasudhevan/Downloads/pexels-tom-swinnen-3194495.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--red);
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color:var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--red);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,min(320px));
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--red);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 100%;
+    padding: 1em;
+
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.location{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color:var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+.location h2
+{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color:var(--white);
+    padding: .25em 1em;
+}
